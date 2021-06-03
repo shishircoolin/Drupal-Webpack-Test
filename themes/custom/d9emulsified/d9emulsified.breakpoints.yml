@@ -1,0 +1,16 @@
+# Breakpoints - change based on site need
+d9emulsified.small:
+  label: small
+  mediaQuery: 'all and (min-width: 25em)'
+d9emulsified.small-med:
+  label: small-med
+  mediaQuery: 'all and (min-width: 26em)'
+d9emulsified.small-large:
+  label: small-large
+  mediaQuery: 'all and (min-width: 41em)'
+d9emulsified.medium:
+  label: medium
+  mediaQuery: 'all and (min-width: 48em)'
+d9emulsified.large:
+  label: large
+  mediaQuery: 'all and (min-width: 61.25em)'

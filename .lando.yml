@@ -1,0 +1,4 @@
+name: drupal_webpack_test
+recipe: drupal9
+config:
+  webroot: .
