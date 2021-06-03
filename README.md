@@ -11,11 +11,15 @@ This project is based on **Lando**.
 `composer install --ignore-platform-reqs` _(Required in order to install Drupal 9)_
 `lando start` _(refer to the [Lando documentation](https://docs.lando.dev/). Kindly note that you do **not** need to run `lando init` as the project already contains a `.lando.yml`.)_
 
+
 ```
 cd themes/custom/d9emulsified/
 yarn install
 yarn build
 ```
+
+* Setup D9 site using defaults (`lando info`) and login to Drupal using the config you created.
+* Enable the following modules (for now kindly do enable it manually, I'll send a config later on): `Layout Builder, Layout Discovery, Media, Media Library, Responsive Image, Admin Toolbar, Admin Toolbar Extra Tools, Admin Toolbar Links Access Filter, Devel, Devel Kint Extras, Emulsify Twig Extensions Module, Components, Token, Views Infinite Scroll`
 
 ## Local Development Information
 * Primary development branch: dev
