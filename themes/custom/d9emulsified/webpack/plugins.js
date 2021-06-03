@@ -3,7 +3,6 @@ const path = require('path');
 const webpack = require('webpack');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const _MiniCssExtractPlugin = require('mini-css-extract-plugin');
-const CssMinimizerPlugin = require('css-minimizer-webpack-plugin');
 const _ImageminPlugin = require('imagemin-webpack-plugin').default;
 const _SpriteLoaderPlugin = require('svg-sprite-loader/plugin');
 const glob = require('glob');
@@ -38,10 +37,5 @@ module.exports = {
   CleanWebpackPlugin: new CleanWebpackPlugin({
     cleanOnceBeforeBuildPatterns: ['!*.{png,jpg,gif,svg}'],
     cleanAfterEveryBuildPatterns: ['remove/**', '!js', '!*.{png,jpg,gif,svg}'],
-  }),
-  optimization: {
-    minimize: true,
-    minimizer: [
-      new CssMinimizerPlugin(),
-    ]}
+  })
 };
