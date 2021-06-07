@@ -36,6 +36,7 @@ const CSSLoader = {
       options: {
         sourceMap: true,
         sassOptions: {
+          indentWidth: 2,
           importer: globImporter(),
           outputStyle: 'compressed',
         },
